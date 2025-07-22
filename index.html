@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artimind - AI Photo/Video App Mockup</title>
-    <meta name="description" content="Mockup giao diện app AI Photo/Video - Artimind. Flow nhiều màn hình, hiệu ứng chuyển, tối ưu cho GitHub Pages.">
+    <meta name="description" content="Mockup giao diện app AI Photo/Video - Artimind. Flow tuyến tính đơn giản.">
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3a8.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -32,159 +31,43 @@
             border-top-color: #3498db;
             animation: spin 1s linear infinite;
         }
-    </style>
-</head>
-<body class="bg-gray-800 flex flex-col items-center justify-center min-h-screen p-4">
-    <div class="phone-mockup bg-white rounded-[40px] border-[14px] border-black shadow-2xl overflow-hidden">
-        <div class="w-full h-full flex flex-col">
-            <div class="bg-black w-40 h-8 mx-auto rounded-b-2xl"></div>
-            <div id="app-container" class="flex-1 overflow-y-auto">
-                <div id="screen-splash" class="screen active flex-col items-center justify-center h-full bg-gradient-to-br from-blue-500 to-indigo-600">
-                    <svg class="w-24 h-24 text-white mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.572L16.5 21.75l-.398-1.178a3.375 3.375 0 00-2.456-2.456L12.5 18l1.178-.398a3.375 3.375 0 002.456-2.456L16.5 14.25l.398 1.178a3.375 3.375 0 002.456 2.456L20.5 18l-1.178.398a3.375 3.375 0 00-2.456 2.456z" />
-                    </svg>
-                    <h1 class="text-4xl font-bold text-white">Artimind</h1>
-                    <p class="text-white/80 mt-1">Phép thuật trong tay bạn</p>
-                </div>
-                <div id="screen-onboarding" class="screen flex-col justify-between h-full p-8 bg-gray-50">
-                    <div class="text-center">
-                        <img src="https://placehold.co/300x250/d1fae5/34d399?text=Minh+họa+tính+năng" alt="Feature illustration" class="w-full rounded-lg mx-auto mb-8">
-                        <h2 class="text-2xl font-bold text-gray-800">Biến ảnh thường thành tuyệt tác</h2>
-                        <p class="text-gray-600 mt-2">Sử dụng AI để phục chế ảnh cũ, tạo avatar độc đáo và hơn thế nữa.</p>
-                    </div>
-                    <button class="w-full bg-indigo-600 text-white font-bold py-4 rounded-lg hover:bg-indigo-700 transition-colors" onclick="showScreen('screen-home')">Bắt đầu ngay</button>
-                </div>
-                <div id="screen-home" class="screen flex-col h-full bg-gray-100">
-                    <div class="p-6">
-                        <h2 class="text-3xl font-bold text-gray-800">Chào buổi sáng!</h2>
-                        <p class="text-gray-500">Hãy cùng tạo nên điều kỳ diệu hôm nay.</p>
-                    </div>
-                    <div class="flex-1 flex flex-col items-center justify-center text-center p-6">
-                         <svg class="w-24 h-24 text-gray-300 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" /></svg>
-                        <p class="text-gray-500">Thư viện của bạn đang trống.</p>
-                        <p class="text-gray-500 text-sm">Hãy tạo tác phẩm đầu tiên!</p>
-                    </div>
-                    <div class="p-6">
-                        <button class="w-full bg-indigo-600 text-white font-bold py-4 rounded-full flex items-center justify-center text-lg hover:bg-indigo-700 transition-colors shadow-lg" onclick="showScreen('screen-choose-style')">
-                            <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
-                            Tạo ảnh mới
-                        </button>
-                    </div>
-                </div>
-                <div id="screen-choose-style" class="screen flex-col h-full bg-gray-50">
-                    <div class="p-6">
-                        <h2 class="text-2xl font-bold text-gray-800">Chọn một phong cách</h2>
-                    </div>
-                    <div class="flex-1 p-6 pt-0 grid grid-cols-2 gap-4 overflow-y-auto">
-                        <div class="aspect-square bg-cover rounded-lg relative overflow-hidden" style="background-image: url('https://placehold.co/200x200/60a5fa/ffffff?text=Anime')" onclick="showScreen('screen-select-photo')"></div>
-                        <div class="aspect-square bg-cover rounded-lg relative overflow-hidden" style="background-image: url('https://placehold.co/200x200/f87171/ffffff?text=Tranh+sơn+dầu')" onclick="showScreen('screen-select-photo')"></div>
-                        <div class="aspect-square bg-cover rounded-lg relative overflow-hidden" style="background-image: url('https://placehold.co/200x200/fbbf24/ffffff?text=Pro')" onclick="showScreen('screen-preview')">
-                            <div class="absolute top-2 right-2 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-full">PRO</div>
-                        </div>
-                        <div class="aspect-square bg-cover rounded-lg relative overflow-hidden" style="background-image: url('https://placehold.co/200x200/34d399/ffffff?text=Pro')" onclick="showScreen('screen-preview')">
-                            <div class="absolute top-2 right-2 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-full">PRO</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="screen-select-photo" class="screen flex-col items-center justify-center h-full bg-gray-100">
-                    <h2 class="text-xl font-bold text-gray-800">Đang mở thư viện ảnh...</h2>
-                    <p class="text-gray-500 mt-2">Mô phỏng việc chọn ảnh.</p>
-                </div>
-                <div id="screen-preview" class="screen flex-col h-full bg-gray-800 relative">
-                    <img src="https://placehold.co/400x800/374151/9ca3af?text=Ảnh+của+bạn" class="w-full h-full object-cover" alt="User's photo preview">
-                    <div class="absolute inset-0 bg-black/50 backdrop-blur-md flex flex-col justify-end p-6 text-white">
-                        <div class="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/20">
-                            <h2 class="text-2xl font-bold text-center">Mở khóa toàn bộ tiềm năng</h2>
-                            <p class="text-center text-white/80 mt-1 mb-6">Xóa logo, xử lý nhanh hơn và truy cập mọi phong cách Pro.</p>
-                            <div class="space-y-3">
-                                <div class="bg-indigo-600 p-4 rounded-lg border-2 border-indigo-400 text-left">
-                                    <p class="font-bold">Gói Năm</p>
-                                    <p class="text-sm">Chỉ 699.000đ/năm - Tiết kiệm 70%</p>
-                                </div>
-                                <div class="bg-white/20 p-4 rounded-lg border-2 border-transparent text-left">
-                                    <p class="font-bold">Gói Trọn đời</p>
-                                    <p class="text-sm">1.999.000đ - Mua một lần duy nhất</p>
-                                </div>
-                            </div>
-                            <button class="w-full bg-white text-indigo-600 font-bold py-4 rounded-lg mt-6 hover:bg-gray-200 transition-colors">Bắt đầu 7 ngày dùng thử miễn phí</button>
-                            <p class="text-center text-xs text-white/60 mt-3">Hủy bất cứ lúc nào.</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="screen-generating" class="screen flex-col items-center justify-center h-full bg-gray-100">
-                    <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-24 w-24"></div>
-                    <h2 class="text-xl font-bold text-gray-800 mt-6">AI đang xử lý...</h2>
-                    <p class="text-gray-500 mt-2">Vui lòng chờ trong giây lát.</p>
-                </div>
-                <div id="screen-result" class="screen flex-col h-full bg-gray-100">
-                    <div class="flex-1 p-4">
-                        <img src="https://placehold.co/400x600/60a5fa/ffffff?text=Thành+phẩm" alt="Final result" class="w-full h-full object-contain rounded-lg">
-                    </div>
-                    <div class="p-6 grid grid-cols-2 gap-4">
-                        <button class="w-full bg-gray-200 text-gray-800 font-bold py-4 rounded-lg hover:bg-gray-300 transition-colors">Lưu</button>
-                        <button class="w-full bg-indigo-600 text-white font-bold py-4 rounded-lg hover:bg-indigo-700 transition-colors">Chia sẻ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="text-center mt-4 text-white/70 text-sm">
-        <p>Đây là bản mockup tương tác. Nhấn vào các nút để chuyển màn hình.</p>
-    </div>
-<script>
-    let currentScreen = 'screen-splash';
-    function showScreen(screenId) {
-        document.getElementById(currentScreen).classList.remove('active');
-        const newScreen = document.getElementById(screenId);
-        newScreen.classList.add('active');
-        currentScreen = screenId;
-        if (screenId === 'screen-select-photo') {
-            setTimeout(() => showScreen('screen-generating'), 1500);
+        .step-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #6366f1;
+            background: #f3f4f6;
+            border-radius: 0.75rem;
+            padding: 0.5rem 1rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            letter-spacing: 0.02em;
         }
-        if (screenId === 'screen-generating') {
-            setTimeout(() => showScreen('screen-result'), 2500);
-        }
-    }
-    window.onload = () => {
-        setTimeout(() => {
-            showScreen('screen-onboarding');
-        }, 2000);
-    };
-</script>
-</body>
-=======
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artimind - AI Photo/Video App Mockup</title>
-    <meta name="description" content="Mockup giao diện app AI Photo/Video - Artimind. Flow nhiều màn hình, hiệu ứng chuyển, tối ưu cho GitHub Pages.">
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3a8.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
-        body {
-            font-family: 'Be Vietnam Pro', sans-serif;
-        }
-        .phone-mockup {
-            width: 100%;
-            max-width: 420px;
-            height: 85vh;
-            max-height: 900px;
-        }
-        .screen {
-            display: none;
-        }
-        .screen.active {
+        .back-btn {
+            position: absolute;
+            top: 1.25rem;
+            left: 1.25rem;
             display: flex;
+            align-items: center;
+            background: #f3f4f6;
+            color: #6366f1;
+            font-weight: 500;
+            border-radius: 9999px;
+            padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+            font-size: 1rem;
+            box-shadow: 0 1px 4px 0 rgba(0,0,0,0.04);
+            cursor: pointer;
+            z-index: 10;
+            border: none;
+            outline: none;
+            transition: background 0.2s;
         }
-        @keyframes spin {
-            to { transform: rotate(360deg); }
+        .back-btn:hover {
+            background: #e0e7ff;
         }
-        .loader {
-            border-top-color: #3498db;
-            animation: spin 1s linear infinite;
+        .back-btn svg {
+            width: 1.25em;
+            height: 1.25em;
+            margin-right: 0.25em;
         }
     </style>
 </head>
@@ -192,7 +75,8 @@
     <div class="phone-mockup bg-white rounded-[40px] border-[14px] border-black shadow-2xl overflow-hidden">
         <div class="w-full h-full flex flex-col">
             <div class="bg-black w-40 h-8 mx-auto rounded-b-2xl"></div>
-            <div id="app-container" class="flex-1 overflow-y-auto">
+            <div id="app-container" class="flex-1 overflow-y-auto relative">
+                <!-- 1. Splash Screen -->
                 <div id="screen-splash" class="screen active flex-col items-center justify-center h-full bg-gradient-to-br from-blue-500 to-indigo-600">
                     <svg class="w-24 h-24 text-white mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.572L16.5 21.75l-.398-1.178a3.375 3.375 0 00-2.456-2.456L12.5 18l1.178-.398a3.375 3.375 0 002.456-2.456L16.5 14.25l.398 1.178a3.375 3.375 0 002.456 2.456L20.5 18l-1.178.398a3.375 3.375 0 00-2.456 2.456z" />
@@ -200,81 +84,76 @@
                     <h1 class="text-4xl font-bold text-white">Artimind</h1>
                     <p class="text-white/80 mt-1">Phép thuật trong tay bạn</p>
                 </div>
-                <div id="screen-onboarding" class="screen flex-col justify-between h-full p-8 bg-gray-50">
-                    <div class="text-center">
-                        <img src="https://placehold.co/300x250/d1fae5/34d399?text=Minh+họa+tính+năng" alt="Feature illustration" class="w-full rounded-lg mx-auto mb-8">
-                        <h2 class="text-2xl font-bold text-gray-800">Biến ảnh thường thành tuyệt tác</h2>
-                        <p class="text-gray-600 mt-2">Sử dụng AI để phục chế ảnh cũ, tạo avatar độc đáo và hơn thế nữa.</p>
-                    </div>
-                    <button class="w-full bg-indigo-600 text-white font-bold py-4 rounded-lg hover:bg-indigo-700 transition-colors" onclick="showScreen('screen-home')">Bắt đầu ngay</button>
+                <!-- 2. Onboarding Screen -->
+                <div id="screen-onboarding" class="screen flex-col items-center justify-center h-full bg-gray-50 p-8">
+                    <div class="step-title">Onboarding</div>
+                    <img src="https://placehold.co/300x250/d1fae5/34d399?text=Minh+họa+tính+năng" alt="Feature illustration" class="w-full rounded-lg mx-auto mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 text-center">Biến ảnh thường thành tuyệt tác</h2>
+                    <p class="text-gray-600 mt-2 text-center">Sử dụng AI để phục chế ảnh cũ, tạo avatar độc đáo và hơn thế nữa.</p>
+                    <button class="w-full bg-indigo-600 text-white font-bold py-4 rounded-lg hover:bg-indigo-700 transition-colors mt-8" onclick="showScreen('screen-home')">Bắt đầu ngay</button>
                 </div>
-                <div id="screen-home" class="screen flex-col h-full bg-gray-100">
-                    <div class="p-6">
-                        <h2 class="text-3xl font-bold text-gray-800">Chào buổi sáng!</h2>
-                        <p class="text-gray-500">Hãy cùng tạo nên điều kỳ diệu hôm nay.</p>
-                    </div>
-                    <div class="flex-1 flex flex-col items-center justify-center text-center p-6">
-                         <svg class="w-24 h-24 text-gray-300 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" /></svg>
-                        <p class="text-gray-500">Thư viện của bạn đang trống.</p>
-                        <p class="text-gray-500 text-sm">Hãy tạo tác phẩm đầu tiên!</p>
-                    </div>
-                    <div class="p-6">
-                        <button class="w-full bg-indigo-600 text-white font-bold py-4 rounded-full flex items-center justify-center text-lg hover:bg-indigo-700 transition-colors shadow-lg" onclick="showScreen('screen-choose-style')">
-                            <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
-                            Tạo ảnh mới
-                        </button>
-                    </div>
+                <!-- 3. Home Screen -->
+                <div id="screen-home" class="screen flex-col items-center justify-center h-full bg-gray-100 p-8 relative">
+                    <button class="back-btn" onclick="goBack()">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                        Quay lại
+                    </button>
+                    <div class="step-title">Home</div>
+                    <h2 class="text-3xl font-bold text-gray-800 text-center">Chào mừng bạn!</h2>
+                    <p class="text-gray-500 text-center">Hãy cùng tạo nên điều kỳ diệu hôm nay.</p>
+                    <button class="w-full bg-indigo-600 text-white font-bold py-4 rounded-lg hover:bg-indigo-700 transition-colors mt-8" onclick="showScreen('screen-choose-style')">Tạo ảnh mới</button>
                 </div>
-                <div id="screen-choose-style" class="screen flex-col h-full bg-gray-50">
-                    <div class="p-6">
-                        <h2 class="text-2xl font-bold text-gray-800">Chọn một phong cách</h2>
-                    </div>
-                    <div class="flex-1 p-6 pt-0 grid grid-cols-2 gap-4 overflow-y-auto">
-                        <div class="aspect-square bg-cover rounded-lg relative overflow-hidden" style="background-image: url('https://placehold.co/200x200/60a5fa/ffffff?text=Anime')" onclick="showScreen('screen-select-photo')"></div>
-                        <div class="aspect-square bg-cover rounded-lg relative overflow-hidden" style="background-image: url('https://placehold.co/200x200/f87171/ffffff?text=Tranh+sơn+dầu')" onclick="showScreen('screen-select-photo')"></div>
-                        <div class="aspect-square bg-cover rounded-lg relative overflow-hidden" style="background-image: url('https://placehold.co/200x200/fbbf24/ffffff?text=Pro')" onclick="showScreen('screen-preview')">
-                            <div class="absolute top-2 right-2 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-full">PRO</div>
-                        </div>
-                        <div class="aspect-square bg-cover rounded-lg relative overflow-hidden" style="background-image: url('https://placehold.co/200x200/34d399/ffffff?text=Pro')" onclick="showScreen('screen-preview')">
-                            <div class="absolute top-2 right-2 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-full">PRO</div>
-                        </div>
-                    </div>
+                <!-- 4. Choose Style Screen -->
+                <div id="screen-choose-style" class="screen flex-col items-center justify-center h-full bg-gray-50 p-8 relative">
+                    <button class="back-btn" onclick="goBack()">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                        Quay lại
+                    </button>
+                    <div class="step-title">Chọn phong cách</div>
+                    <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">Chọn một phong cách</h2>
+                    <img src="https://placehold.co/200x200/60a5fa/ffffff?text=Anime" alt="Style" class="rounded-lg mb-8">
+                    <button class="w-full bg-indigo-600 text-white font-bold py-4 rounded-lg hover:bg-indigo-700 transition-colors" onclick="showScreen('screen-select-photo')">Tiếp tục</button>
                 </div>
-                <div id="screen-select-photo" class="screen flex-col items-center justify-center h-full bg-gray-100">
-                    <h2 class="text-xl font-bold text-gray-800">Đang mở thư viện ảnh...</h2>
-                    <p class="text-gray-500 mt-2">Mô phỏng việc chọn ảnh.</p>
+                <!-- 5. Select Photo (Simulated) -->
+                <div id="screen-select-photo" class="screen flex-col items-center justify-center h-full bg-gray-100 p-8 relative">
+                    <button class="back-btn" onclick="goBack()">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                        Quay lại
+                    </button>
+                    <div class="step-title">Chọn ảnh</div>
+                    <h2 class="text-xl font-bold text-gray-800 text-center">Đang mở thư viện ảnh...</h2>
+                    <p class="text-gray-500 mt-2 text-center">Mô phỏng việc chọn ảnh.</p>
                 </div>
-                <div id="screen-preview" class="screen flex-col h-full bg-gray-800 relative">
-                    <img src="https://placehold.co/400x800/374151/9ca3af?text=Ảnh+của+bạn" class="w-full h-full object-cover" alt="User's photo preview">
-                    <div class="absolute inset-0 bg-black/50 backdrop-blur-md flex flex-col justify-end p-6 text-white">
-                        <div class="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/20">
-                            <h2 class="text-2xl font-bold text-center">Mở khóa toàn bộ tiềm năng</h2>
-                            <p class="text-center text-white/80 mt-1 mb-6">Xóa logo, xử lý nhanh hơn và truy cập mọi phong cách Pro.</p>
-                            <div class="space-y-3">
-                                <div class="bg-indigo-600 p-4 rounded-lg border-2 border-indigo-400 text-left">
-                                    <p class="font-bold">Gói Năm</p>
-                                    <p class="text-sm">Chỉ 699.000đ/năm - Tiết kiệm 70%</p>
-                                </div>
-                                <div class="bg-white/20 p-4 rounded-lg border-2 border-transparent text-left">
-                                    <p class="font-bold">Gói Trọn đời</p>
-                                    <p class="text-sm">1.999.000đ - Mua một lần duy nhất</p>
-                                </div>
-                            </div>
-                            <button class="w-full bg-white text-indigo-600 font-bold py-4 rounded-lg mt-6 hover:bg-gray-200 transition-colors">Bắt đầu 7 ngày dùng thử miễn phí</button>
-                            <p class="text-center text-xs text-white/60 mt-3">Hủy bất cứ lúc nào.</p>
-                        </div>
-                    </div>
+                <!-- 6. Preview Screen (NO PAYWALL) -->
+                <div id="screen-preview" class="screen flex-col items-center justify-center h-full bg-gray-800 p-8 relative">
+                    <button class="back-btn" onclick="goBack()">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                        Quay lại
+                    </button>
+                    <div class="step-title">Preview</div>
+                    <img src="https://placehold.co/400x800/374151/9ca3af?text=Ảnh+của+bạn" class="w-full h-72 object-cover rounded-lg mb-6" alt="User's photo preview">
+                    <button class="w-full bg-indigo-600 text-white font-bold py-4 rounded-lg hover:bg-indigo-700 transition-colors" onclick="showScreen('screen-generating')">Tiếp tục</button>
                 </div>
-                <div id="screen-generating" class="screen flex-col items-center justify-center h-full bg-gray-100">
+                <!-- 7. Generating Screen -->
+                <div id="screen-generating" class="screen flex-col items-center justify-center h-full bg-gray-100 p-8 relative">
+                    <button class="back-btn" onclick="goBack()">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                        Quay lại
+                    </button>
+                    <div class="step-title">Đang xử lý</div>
                     <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-24 w-24"></div>
                     <h2 class="text-xl font-bold text-gray-800 mt-6">AI đang xử lý...</h2>
                     <p class="text-gray-500 mt-2">Vui lòng chờ trong giây lát.</p>
                 </div>
-                <div id="screen-result" class="screen flex-col h-full bg-gray-100">
-                    <div class="flex-1 p-4">
-                        <img src="https://placehold.co/400x600/60a5fa/ffffff?text=Thành+phẩm" alt="Final result" class="w-full h-full object-contain rounded-lg">
-                    </div>
-                    <div class="p-6 grid grid-cols-2 gap-4">
+                <!-- 8. Result Screen -->
+                <div id="screen-result" class="screen flex-col items-center justify-center h-full bg-gray-100 p-8 relative">
+                    <button class="back-btn" onclick="goBack()">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                        Quay lại
+                    </button>
+                    <div class="step-title">Kết quả</div>
+                    <img src="https://placehold.co/400x600/60a5fa/ffffff?text=Thành+phẩm" alt="Final result" class="w-full h-72 object-contain rounded-lg mb-6">
+                    <div class="w-full flex gap-4">
                         <button class="w-full bg-gray-200 text-gray-800 font-bold py-4 rounded-lg hover:bg-gray-300 transition-colors">Lưu</button>
                         <button class="w-full bg-indigo-600 text-white font-bold py-4 rounded-lg hover:bg-indigo-700 transition-colors">Chia sẻ</button>
                     </div>
@@ -283,22 +162,51 @@
         </div>
     </div>
     <div class="text-center mt-4 text-white/70 text-sm">
-        <p>Đây là bản mockup tương tác. Nhấn vào các nút để chuyển màn hình.</p>
+        <p>Đây là bản mockup flow cơ bản. Nhấn vào các nút để chuyển màn hình.</p>
     </div>
 <script>
-    let currentScreen = 'screen-splash';
-    function showScreen(screenId) {
-        document.getElementById(currentScreen).classList.remove('active');
-        const newScreen = document.getElementById(screenId);
-        newScreen.classList.add('active');
-        currentScreen = screenId;
-        if (screenId === 'screen-select-photo') {
-            setTimeout(() => showScreen('screen-generating'), 1500);
+    // Danh sách flow tuyến tính
+    const screens = [
+        'screen-splash',
+        'screen-onboarding',
+        'screen-home',
+        'screen-choose-style',
+        'screen-select-photo',
+        'screen-preview',
+        'screen-generating',
+        'screen-result'
+    ];
+    let currentScreenIndex = 0;
+    let selectPhotoTimeout = null;
+    let generatingTimeout = null;
+
+    function showScreen(screenId, isBack = false) {
+        // Ẩn tất cả màn hình
+        screens.forEach(id => {
+            document.getElementById(id).classList.remove('active');
+        });
+        // Hiện màn hình mới
+        document.getElementById(screenId).classList.add('active');
+        currentScreenIndex = screens.indexOf(screenId);
+        // Xóa timeout cũ nếu có
+        if (selectPhotoTimeout) { clearTimeout(selectPhotoTimeout); selectPhotoTimeout = null; }
+        if (generatingTimeout) { clearTimeout(generatingTimeout); generatingTimeout = null; }
+        // Chỉ tự động chuyển tiếp khi đi tới (không phải back)
+        if (screenId === 'screen-select-photo' && !isBack) {
+            selectPhotoTimeout = setTimeout(() => showScreen('screen-preview'), 1200);
         }
         if (screenId === 'screen-generating') {
-            setTimeout(() => showScreen('screen-result'), 2500);
+            generatingTimeout = setTimeout(() => showScreen('screen-result'), 2000);
         }
     }
+
+    function goBack() {
+        if (currentScreenIndex > 2) { // Không cho back ở Splash (0) và Onboarding (1)
+            showScreen(screens[currentScreenIndex - 1], true);
+        }
+    }
+
+    // Tự động chuyển từ Splash sang Onboarding sau 2 giây
     window.onload = () => {
         setTimeout(() => {
             showScreen('screen-onboarding');
@@ -306,5 +214,4 @@
     };
 </script>
 </body>
->>>>>>> ea0369a87d096d785ee32024b8208bd5807d644c
 </html> 
